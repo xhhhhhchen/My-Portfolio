@@ -47,7 +47,7 @@ const Navbar = ({ isClicked, toggleNavClick }) => {
                             className={`mb-4 text-lg font-medium capitalize ${activeLink === item.title ? 'text-blue-500' : 'text-white'}`}
                         >
                             <a 
-                                className={` ${activeLink === item.title? 'text-blue-600': 'text-white'} hover:text-blue-600 transition-colors duration-100 ease-in`}
+                                className={` ${activeLink === item.title? 'text-red-200': 'text-white'} hover:text-blue-300 transition-colors duration-100 ease-in`}
                                 href={item.url}
                                 onClick= {()=> toggleNavClick()}
                             >
@@ -65,9 +65,9 @@ const Navbar = ({ isClicked, toggleNavClick }) => {
                         <li key={item.title} className = 'inline-block '>
                             <a 
                                 className={`relative font-medium after:absolute after:bottom-[-0.2rem] after:left-0 after:h-[3px] after:w-[20px] after:rounded-xl after:transition-all after:duration-300 after:ease-in hover:after:bg-blue-600 hover:after:w-full
-                                    ${activeLink === item.title ? 'text-blue-600 relative after:absolute after:bottom-[-0.2rem] after:bg-blue-600 after:left-0 after:h-[3px] after:w-full after:rounded-xl ' : 
+                                    ${activeLink === item.title ? 'text-red-200 relative after:absolute after:bottom-[-0.2rem] after:bg-teal-200 after:left-0 after:h-[3px] after:w-full after:rounded-xl ' : 
                                         'text-white'} 
-                                        hover:text-blue-600 transition-colors duration-100 ease-in`}
+                                        hover:text-blue-400 transition-colors duration-100 ease-in`}
                                 href={item.url}
                             >
                                 {item.title}

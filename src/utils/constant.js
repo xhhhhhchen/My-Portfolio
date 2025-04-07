@@ -13,15 +13,16 @@ import TypeScript from '../assets/typescript.svg';
 import Tailwind from '../assets/tailwindcss.svg';
 import Postgres from '../assets/postgresql.svg';
 
+
 export const projects = [
   {
     id: 1,
-    title: 'Zen',
+    title: 'Airbnb Price Prediction',
     description:
       'Zen is a modern hotel website built with Next.js, featuring a sleek design powered by Tailwind CSS. It offers an intuitive user interface to explore rooms, amenities, and make reservations seamlessly.',
     image: Project1,
     stack: ['React', 'Next.js', 'Tailwind CSS'],
-    liveUrl: 'https://www.google.com',
+    liveUrl: '#Airbnb',
     sourceUrl: 'https://www.google.com',
   },
 
@@ -47,6 +48,40 @@ export const projects = [
     liveUrl: 'https://www.google.com',
     sourceUrl: 'https://www.google.com',
   },
+
+  {
+    id: 4,
+    title: 'Furniq',
+    description:
+      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
+    image: Project3,
+    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+    liveUrl: 'https://www.google.com',
+    sourceUrl: 'https://www.google.com',
+  },
+
+  {
+    id: 4,
+    title: 'Furniq',
+    description:
+      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
+    image: Project3,
+    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+    liveUrl: 'https://www.google.com',
+    sourceUrl: 'https://www.google.com',
+  },
+
+  {
+    id: 4,
+    title: 'Furniq',
+    description:
+      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
+    image: Project3,
+    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+    liveUrl: 'https://www.google.com',
+    sourceUrl: 'https://www.google.com',
+  },
+  
 ];
 
 export const skills = [

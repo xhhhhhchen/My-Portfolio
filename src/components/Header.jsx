@@ -36,9 +36,9 @@ const Header = () => {
     <div className = "container flex items-center justify-between py-4">
         {/* logo */}
         <div className = "z-10"> 
-            <a className= 'font-bold text-white md:text-lg' href = "/"> Alex {' '}
-                <span className = "bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> 
-             Carter 
+            <a className= 'font-bold text-white md:text-lg' href = "/"> XiaoHong {' '}
+                <span className = "bg-gradient-to-r from-teal-300 to-red-300 bg-clip-text text-transparent"> 
+             Chen 
                 </span>   
             </a>
         </div>
