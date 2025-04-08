@@ -25,10 +25,13 @@ const Projects = () => {
                   ease: "easeInOut",  // Use easeInOut for smooth pop effect
                 },
               }}
+
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, x: [100, 0] }}  // Fade and slide-in animation
               transition={{ duration: 0.5 }}
             >
+
+
               <div>
                 <img
                   className="rounded-tr-3xl rounded-tl-2xl"

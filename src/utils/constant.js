@@ -17,71 +17,73 @@ import Postgres from '../assets/postgresql.svg';
 export const projects = [
   {
     id: 1,
-    title: 'Airbnb Price Prediction',
+    title: 'capstone project',
     description:
-      'Zen is a modern hotel website built with Next.js, featuring a sleek design powered by Tailwind CSS. It offers an intuitive user interface to explore rooms, amenities, and make reservations seamlessly.',
+      " capstone project description here",
     image: Project1,
-    stack: ['React', 'Next.js', 'Tailwind CSS'],
+    stack: ['Data Analysis', 'Machine Learning', 'Streamlit'], 
     liveUrl: '#Airbnb',
     sourceUrl: 'https://www.google.com',
   },
 
   {
     id: 2,
-    title: 'Bus Prediction App',
+    title: 'Deep Learning project here',
     description:
-      'Pixar is a website clone built with React, featuring a responsive design, carousels, and a navigation system. The website is a perfect example of how to create a modern website with a clean and minimalistic design.',
-
-    image: Project2,
-    stack: ['React', 'Tailwind CSS', 'JavaScript'],
-    liveUrl: 'https://www.google.com',
+      "deepp learning description here",
+    image: Project1,
+    stack: ['some stack'], 
+    liveUrl: '#Airbnb',
     sourceUrl: 'https://www.google.com',
   },
 
   {
     id: 3,
-    title: 'Employee Promotion Classification',
+    title: 'Bus Prediction App',
     description:
-      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
-    image: Project3,
-    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+      'Developed a data pipeline through Alteryx for real-time data streaming and created an end-user interface using Streamlit.',
+
+    image: Project2,
+    stack: ['Data Engineering', 'StreamLit'],
     liveUrl: 'https://www.google.com',
     sourceUrl: 'https://www.google.com',
   },
+
 
   {
     id: 4,
     title: 'ASEAN Poverty Pulse',
     description:
-      'Data analysis on ASEAN poverty and health data, creating a dashboard that highlights key insights to support efforts in reducing poverty and improving well-being.',
+      'Conducted data analysis on ASEAN poverty and health issues, created dashboards that highlights key insights to support poverty reduction improving living conditions',
     image: Project3,
-    stack: ['Tableau'],
+    stack: ['Data Analysis'],
     liveUrl: 'https://www.google.com',
     sourceUrl: 'https://www.google.com',
   },
 
   {
-    id: 4,
+    id: 5,
+    title: 'Airbnb Price Prediction',
+    description:
+      "Developed a pricing prediction model with Python and machine learning based on Singapore's Airbnb listings, and deploying it using Streamlit. ",
+    image: Project1,
+    stack: ['Data Analysis', 'Machine Learning', 'Streamlit'], 
+    liveUrl: '#Airbnb',
+    sourceUrl: 'https://www.google.com',
+  },
+
+  {
+    id: 6,
     title: 'Major League Baseball database',
     description:
-      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
+      'Developed a linear regression model to predict the win rate of teams in the Major League Baseball (MLB) using historical data and player statistics.',
     image: Project3,
-    stack: ['Python', 'Tailwind CSS', 'JavaScript'],
+    stack: ['Data Analysis','Machine learning'],
     liveUrl: 'https://www.google.com',
     sourceUrl: 'https://www.google.com',
   },
 
-  {
-    id: 4,
-    title: 'Flipkart Sales Analysis',
-    description:
-      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
-    image: Project3,
-    stack: ['React', 'Tailwind CSS', 'JavaScript'],
-    liveUrl: 'https://www.google.com',
-    sourceUrl: 'https://www.google.com',
-  },
-  
+
 ];
 
 export const skills = [

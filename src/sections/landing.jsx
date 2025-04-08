@@ -43,7 +43,7 @@ const Landing = () => {
 
   useEffect(() => {
     // Set a timer to navigate after all greetings are shown
-    const totalTime = (5000); // Approximate total time for all greetings
+    const totalTime = (3000); // Approximate total time for all greetings
     const timer = setTimeout(() => {
       navigate('/main');
     }, totalTime);

@@ -137,7 +137,7 @@ const Hero = () => {
             animate="show"
           >
             {/* Image - Smaller on mobile */}
-            <motion.div className='mb-6 md:mb-8' variants={scaleUp}>
+            <motion.div className='mt-10 mb-6 md:mb-8' variants={scaleUp}>
               <img 
                 className='size-32 md:size-30 lg:size-56 rounded-full mx-auto bg-gradient-to-r from-teal-300 to-red-300 object-cover' 
                 src={HeroImg} 
@@ -200,7 +200,7 @@ const Hero = () => {
 
               {/* Tags - Stack on small screens */}
               <motion.div 
-                className="flex flex-row flex-wrap justify-center gap-2 mb-4 md:mb-6"
+                className="flex flex-row flex-wrap justify-center gap-2 md:mb-6"
                 variants={itemFromLeft}
               >
                 {/* First Tag - Data Science Major */}
@@ -234,7 +234,7 @@ const Hero = () => {
 
               {/* Buttons - Stack on mobile, flex on larger screens */}
               <motion.div 
-                className='flex mt-15 items-center justify-center gap-4 md:gap-8'
+                className='flex mt-10 items-center justify-center gap-4 md:gap-8'
                 variants={itemFromBottom}
               >
                 <a 
