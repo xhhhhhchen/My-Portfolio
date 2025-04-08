@@ -14,11 +14,10 @@
   --font-poppins: "Poppins", sans-serif; 
 
   /* breakpoints */
-  --breakpoint-sm: 36rem;
-  --breakpoint-sm: 38rem;
-  --breakpoint-sm: 64rem;
-  --breakpoint-sm: 68.75rem;
-
+  --breakpoint-sm: 36rem;  /* 576px */
+  --breakpoint-md: 48rem;  /* 768px */
+  --breakpoint-lg: 64rem;  /* 1024px */
+  --breakpoint-xl: 68.75rem; /* 1100px */
 }
 
 @keyframes blink {

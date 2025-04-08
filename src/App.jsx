@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './sections/hero';
@@ -12,8 +12,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './sections/landing';
 
 const App = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
   // Background elements data - can be moved to a separate file if needed
   const backgroundElements = [
     { icon: 'σ', size: 20, left: '10%', top: '20%', delay: 0.2 },
@@ -37,31 +35,9 @@ const App = () => {
     }))
   );
 
-  // Track the scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  // Function to calculate opacity based on scroll position
-  const getOpacity = (scrollPos, elementOffsetTop) => {
-    const distance = scrollPos - elementOffsetTop;
-    if (distance < 0) return 1;
-    if (distance > 500) return 0;
-    return 1 - distance / 200;
-  };
-
   // Background component to reuse across routes
   const DataScienceBackground = () => (
     <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
-
       {/* Subtle grid lines */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -83,53 +59,14 @@ const App = () => {
         
         <Route path="/main" element={
           <div className="relative min-h-screen">
-
             <DataScienceBackground />
-            
             <Header />
-            
-            <motion.div
-              style={{ opacity: getOpacity(scrollPosition, 900) }}
-              transition={{ duration: 0.5 }}
-            >
-              <Hero />
-            </motion.div>
-
-            <motion.div
-              style={{ opacity: getOpacity(scrollPosition, 2300) }}
-              transition={{ duration: 0.5 }}
-            >
-              <Projects />
-            </motion.div>
-
-            <motion.div
-              style={{ opacity: getOpacity(scrollPosition, 3000) }}
-              transition={{ duration: 0.5 }}
-            >
-              <About />
-            </motion.div>
-
-            <motion.div
-              style={{ opacity: getOpacity(scrollPosition, 3500) }}
-              transition={{ duration: 0.5 }}
-            >
-              <Skills />
-            </motion.div>
-
-            <motion.div
-              style={{ opacity: getOpacity(scrollPosition, 3800) }}
-              transition={{ duration: 0.5 }}
-            >
-              <Experience />
-            </motion.div>
-
-            <motion.div
-              style={{ opacity: getOpacity(scrollPosition, 4000) }}
-              transition={{ duration: 0.5 }}
-            >
-              <Contact />
-            </motion.div>
-
+            <Hero />
+            <Projects />
+            <About />
+            <Skills />
+            <Experience />
+            <Contact />
             <Footer />
           </div>
         } />
