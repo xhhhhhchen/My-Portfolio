@@ -14,7 +14,7 @@ const About = () => {
             <div>
                 <Title title = 'about' highlight ="me" subtitle ='Get to know me better' isCenter={false}/>
 
-                <p className = 'leading-7'>
+                <p className = 'leading-7 flex flex-col gap-4 mt-6 max-w-prose overflow-hidden break-words '>
                     faafafafafaaadffadfhjfhajfhajfhfdafajfahajfdafjahjfajffafjajdfajfhadjfhajf ife fef effqfqkef afajfafafda fa af adf af afaf adf afa dfdf asdf ad ad af afaf a ffaafafafafaaadffadfhjfhajfhajfhfdafajfahajfdafjahjfajffafjajdfajfhadjfhajf ife fef effqfqkef afajfafafda fa af adf af afaf adf afa dfdf asdf ad ad af afaf a ffaafafafafaaadffadfhjfhajfhajfhfdafajfahajfdafjahjfajffafjajdfajfhadjfhajf ife fef effqfqkef afajfafafda fa af adf af afaf adf afa dfdf asdf ad ad af afaf a f
                 </p>
             </div>
