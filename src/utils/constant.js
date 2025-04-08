@@ -28,7 +28,7 @@ export const projects = [
 
   {
     id: 2,
-    title: 'Pixar',
+    title: 'Bus Prediction App',
     description:
       'Pixar is a website clone built with React, featuring a responsive design, carousels, and a navigation system. The website is a perfect example of how to create a modern website with a clean and minimalistic design.',
 
@@ -40,7 +40,7 @@ export const projects = [
 
   {
     id: 3,
-    title: 'Furniq',
+    title: 'Employee Promotion Classification',
     description:
       'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
     image: Project3,
@@ -51,29 +51,29 @@ export const projects = [
 
   {
     id: 4,
-    title: 'Furniq',
+    title: 'ASEAN Poverty Pulse',
     description:
-      'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
+      'Data analysis on ASEAN poverty and health data, creating a dashboard that highlights key insights to support efforts in reducing poverty and improving well-being.',
     image: Project3,
-    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+    stack: ['Tableau'],
     liveUrl: 'https://www.google.com',
     sourceUrl: 'https://www.google.com',
   },
 
   {
     id: 4,
-    title: 'Furniq',
+    title: 'Major League Baseball database',
     description:
       'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
     image: Project3,
-    stack: ['React', 'Tailwind CSS', 'JavaScript'],
+    stack: ['Python', 'Tailwind CSS', 'JavaScript'],
     liveUrl: 'https://www.google.com',
     sourceUrl: 'https://www.google.com',
   },
 
   {
     id: 4,
-    title: 'Furniq',
+    title: 'Flipkart Sales Analysis',
     description:
       'This project is a modern furniture e-commerce website with a clean and minimalistic design. The website is built with React and features a responsive design, a functional shopping cart, and a user-friendly navigation system.',
     image: Project3,

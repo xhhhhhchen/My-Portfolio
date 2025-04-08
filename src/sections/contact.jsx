@@ -2,6 +2,10 @@ import React from 'react'
 import Title from '../components/title'
 import Form from '../components/form'
 import { Phone ,Mail,Linkedin, Github} from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faKaggle } from '@fortawesome/free-brands-svg-icons';
+
+
 
 const contact = () => {
   return (
@@ -28,15 +32,22 @@ const contact = () => {
                     </div>
 
                     <div className = "flex  items-center gap-4 mb-6 justify-start ">
-                        <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2 hover:text-blue-600 transition-all duration=100 ease-in-out'>
+                        <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2 transition-all duration=100 ease-in-out'>
                             <Linkedin className = "size-6"/>
                             </a>
                         
 
-                        <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2 hover:text-blue-600 transition-all duration=100 ease-in-out'>
+                        <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out'>
                             <Github className = "size-6"/>
                             </a>
 
+                        <a href="https://www.kaggle.com/your-profile" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out">
+                            <FontAwesomeIcon icon={faKaggle} className="text-white" size="lg"  />
+                            </a>
+
+
+                            
+                           
                             </div>
 
                     </div>

@@ -1,10 +1,15 @@
-import React from 'react';
-import HeroImg from '../assets/hero-image.png';
-import { SquareArrowOutUpRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from 'react'
+import HeroImg from '../assets/hero-image.png'
+import {SquareArrowOutUpRight, Home, Settings, User, Mail, Plus } from 'lucide-react'
+import {motion} from 'framer-motion'
+import { Linkedin, Github} from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faKaggle } from '@fortawesome/free-brands-svg-icons';
+
+
 
 const Hero = () => {
-  // Animation variants (unchanged)
+  // Animation variants
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -14,36 +19,54 @@ const Hero = () => {
         delayChildren: 0.3
       }
     }
-  };
+  }
 
   const itemFromLeft = {
     hidden: { opacity: 0, x: -50 },
     show: { opacity: 1, x: 0, transition: { duration: 0.5 } }
-  };
+  }
 
   const itemFromRight = {
     hidden: { opacity: 0, x: 50 },
     show: { opacity: 1, x: 0, transition: { duration: 0.5 } }
-  };
+  }
 
   const itemFromBottom = {
     hidden: { opacity: 0, y: 50 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-  };
+  }
 
   const itemFromTop = {
     hidden: { opacity: 0, y: -50 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-  };
+  }
 
   const scaleUp = {
     hidden: { opacity: 0, scale: 0.8 },
     show: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
-  };
+  }
 
-  // Background elements (unchanged)
-  const backgroundElements = [ /* ... */ ];
-  const graphNodes = [ /* ... */ ];
+// Background elements data
+  const backgroundElements = [
+    { icon: 'σ', size: 20, left: '10%', top: '20%', delay: 0.2 },
+    { icon: '∑', size: 24, left: '85%', top: '30%', delay: 0.4 },
+    { icon: '∫', size: 28, left: '15%', top: '70%', delay: 0.6 },
+    { icon: 'π', size: 22, left: '80%', top: '80%', delay: 0.8 },
+    { icon: 'β', size: 26, left: '25%', top: '40%', delay: 1.0 },
+    { icon: 'θ', size: 30, left: '75%', top: '60%', delay: 1.2 },
+    { icon: 'λ', size: 18, left: '40%', top: '20%', delay: 1.4 },
+    { icon: '∇', size: 32, left: '60%', top: '85%', delay: 1.6 },
+    ]
+
+    // Floating graph nodes
+    const graphNodes = Array.from({ length: 15 }).map((_, i) => ({
+    size: Math.random() * 6 + 4,
+    left: `${Math.random() * 100}%`,
+    top: `${Math.random() * 100}%`,
+    delay: Math.random() * 2,
+    duration: Math.random() * 10 + 10,
+    }))
+    
 
   return (
     <motion.div 
@@ -53,10 +76,57 @@ const Hero = () => {
       transition={{duration: 0.5}}
       className="relative overflow-hidden"
     >
-      {/* Background elements (unchanged) */}
+        {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* ... */}
+        {/* Mathematical symbols */}
+        {backgroundElements.map((el, i) => (
+          <motion.div
+            key={`math-${i}`}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 0.3, y: 0 }}
+            transition={{ delay: el.delay, duration: 1 }}
+            className="absolute text-neutral-100"
+            style={{
+              left: el.left,
+              top: el.top,
+              fontSize: `${el.size}px`,
+            }}
+          >
+            {el.icon}
+          </motion.div>
+        ))}
+
+        {/* Floating graph nodes */}
+        {graphNodes.map((node, i) => (
+          <motion.div
+            key={`node-${i}`}
+            initial={{ opacity: 0.1, y: 0 }}
+            animate={{
+              opacity: [0.3, 0.9, 0],
+              y: [0, -50],
+              x: [0, (Math.random() - 0.5) * 50],
+            }}
+            transition={{
+              delay: node.delay,
+              duration: node.duration,
+              repeat: Infinity,
+              repeatType: 'reverse',
+            }}
+            className="absolute rounded-full bg-gradient-to-r from-teal-300 to-red-300"
+            style={{
+              left: node.left,
+              top: node.top,
+              width: `${node.size}px`,
+              height: `${node.size}px`,
+            }}
+          />
+        ))}
+
+
       </div>
+
+      {/* Your existing content */}
+
 
       <section id='home' className="min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
@@ -69,17 +139,33 @@ const Hero = () => {
             {/* Image - Smaller on mobile */}
             <motion.div className='mb-6 md:mb-8' variants={scaleUp}>
               <img 
-                className='size-32 md:size-48 lg:size-56 rounded-full mx-auto bg-gradient-to-r from-teal-300 to-red-300 object-cover' 
+                className='size-32 md:size-30 lg:size-56 rounded-full mx-auto bg-gradient-to-r from-teal-300 to-red-300 object-cover' 
                 src={HeroImg} 
                 alt="Profile"
               />
+
+            <div className=' flex items-center justify-center gap-4 mt-8'>
+                <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className=' hover:-translate-y-2 transition-all duration=100 ease-in-out'>
+                <Linkedin className = "size-6"/>
+                </a>
+            
+
+                <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out'>
+                <Github className = "size-6"/>
+                </a>
+
+                <a href="https://www.kaggle.com/your-profile" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out">
+                <FontAwesomeIcon icon={faKaggle} className="text-white" size="lg"  />
+                </a>
+            </div>
+
             </motion.div>
 
             {/* Text Content */}
             <div className="text-center">
               {/* Main Headline - Responsive text sizing */}
               <motion.h1 
-                className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-[1.2] mb-2 md:mb-4'
+                className='text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-[1.2] mb-2 md:mb-4'
                 variants={itemFromLeft}
               >
                 Turning data into {' '} 
@@ -89,18 +175,18 @@ const Hero = () => {
               </motion.h1>
 
               <motion.h2 
-                className='text-xl sm:text-2xl font-extrabold my-2 md:my-4'
+                className='text-l sm:text-xl font-bold my-2 md:my-4'
                 variants={itemFromTop}
               >
                 &
               </motion.h2>
 
               <motion.h1 
-                className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-[1.2] mb-4 md:mb-6'
+                className='text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-[1.2] mb-4 md:mb-6'
                 variants={itemFromRight}
               >
                 <span className="bg-gradient-to-r from-teal-300 to-red-300 bg-clip-text text-transparent">
-                  insights
+                  Insights
                 </span> {' '} 
                 into {' '}
                 <span className="bg-sky-900 px-2 rounded-lg">Actions</span>
@@ -114,20 +200,33 @@ const Hero = () => {
 
               {/* Tags - Stack on small screens */}
               <motion.div 
-                className="flex flex-col sm:flex-row justify-center gap-2 md:gap-4 mb-4 md:mb-6"
+                className="flex flex-row flex-wrap justify-center gap-2 mb-4 md:mb-6"
                 variants={itemFromLeft}
               >
-                <span className="bg-indigo-900 px-3 py-1 text-sm md:text-base rounded-lg inline-block">
-                  Data Science Major
-                </span>
-                <span className="bg-blue-900 px-3 py-1 text-sm md:text-base rounded-lg inline-block">
-                  User Experience Minor
-                </span>
+                {/* First Tag - Data Science Major */}
+                <div className="flex-shrink-0 max-w-full">
+                  <span className="bg-indigo-900 px-3 py-1 text-sm md:text-base rounded-lg inline-block truncate">
+                    Data Science Major
+                  </span>
+                </div>
+                
+                
+                {/* Second Tag - User Experience Minor */}
+                <div className="flex-shrink-0 max-w-full">
+                  <span className="bg-blue-900 px-3 py-1 text-sm md:text-base rounded-lg inline-block truncate">
+                    User Experience Minor
+                  </span>
+                </div> 
+
               </motion.div>
+
+               {/* Divider - Responsive margin */}
+              
+
 
               {/* Description - Responsive text and padding */}
               <motion.p 
-                className='text-sm sm:text-base md:text-lg px-4 sm:px-0 mb-8 md:mb-12 max-w-2xl mx-auto'
+                className='hidden md:block text-sm sm:text-base md:text-lg px-4 sm:px-0 mb-8 md:mb-12 max-w-2xl mx-auto '
                 variants={itemFromRight}
               >
                 Focused on using data to derive practical, user-friendly solutions, especially to tackle sustainability challenges.
@@ -135,7 +234,7 @@ const Hero = () => {
 
               {/* Buttons - Stack on mobile, flex on larger screens */}
               <motion.div 
-                className='flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8'
+                className='flex mt-15 items-center justify-center gap-4 md:gap-8'
                 variants={itemFromBottom}
               >
                 <a 
@@ -153,9 +252,13 @@ const Hero = () => {
                 >
                   <span className='font-semibold mr-2'>Resume</span> 
                   <SquareArrowOutUpRight size={16} className="inline" />
+                  
                 </a>
               </motion.div>
             </div>
+            
+           
+
           </motion.div>
         </div>
       </section>

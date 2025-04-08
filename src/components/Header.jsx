@@ -3,6 +3,8 @@ import Navbar from './Navbar';
 import {AlignLeft, X } from 'lucide-react';
 import {useState} from 'react'; 
 
+
+
 const Header = () => {
     const [isClicked, setIsClicked] = useState(false);
     const [scrolling, setIsScrolling] = useState(false);
@@ -35,12 +37,13 @@ const Header = () => {
   
     <div className = "container flex items-center justify-between py-4">
         {/* logo */}
-        <div className = "z-10"> 
+        <div className = " flex gap-4 z-10"> 
             <a className= 'font-bold text-white md:text-lg' href = "/"> XiaoHong {' '}
                 <span className = "bg-gradient-to-r from-teal-300 to-red-300 bg-clip-text text-transparent"> 
              Chen 
                 </span>   
             </a>
+
         </div>
 
         {/* nav */}
