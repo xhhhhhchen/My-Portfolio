@@ -1,7 +1,8 @@
 // project images
-import Project1 from '../assets/project-1.png';
-import Project3 from '../assets/project-2.png';
-import Project2 from '../assets/project-3.png';
+import Airbnb from '../assets/airbnb.png';
+import BusArrival from '../assets/BusArrival.png';
+import Poverty from '../assets/ASEAN.png';
+import baseball from '../assets/baseball.png';
 
 // skills images
 import Html from '../assets/html5.svg';
@@ -15,27 +16,27 @@ import Postgres from '../assets/postgresql.svg';
 
 
 export const projects = [
-  {
-    id: 1,
-    title: 'capstone project',
-    description:
-      " capstone project description here",
-    image: Project1,
-    stack: ['Data Analysis', 'Machine Learning', 'Streamlit'], 
-    liveUrl: '#Airbnb',
-    sourceUrl: 'https://www.google.com',
-  },
+  // {
+  //   id: 1,
+  //   title: 'capstone project',
+  //   description:
+  //     " capstone project description here",
+  //   image: Airbnb,
+  //   stack: ['Data Analysis', 'Machine Learning', 'Streamlit'], 
+  //   liveUrl: '#Airbnb',
+  //   sourceUrl: 'https://www.google.com',
+  // },
 
-  {
-    id: 2,
-    title: 'Deep Learning project here',
-    description:
-      "deepp learning description here",
-    image: Project1,
-    stack: ['some stack'], 
-    liveUrl: '#Airbnb',
-    sourceUrl: 'https://www.google.com',
-  },
+  // {
+  //   id: 2,
+  //   title: 'Deep Learning project here',
+  //   description:
+  //     "deepp learning description here",
+  //   image: Airbnb,
+  //   stack: ['some stack'], 
+  //   liveUrl: '#Airbnb',
+  //   sourceUrl: 'https://www.google.com',
+  // },
 
   {
     id: 3,
@@ -43,10 +44,10 @@ export const projects = [
     description:
       'Developed a data pipeline through Alteryx for real-time data streaming and created an end-user interface using Streamlit.',
 
-    image: Project2,
-    stack: ['Data Engineering', 'StreamLit'],
-    liveUrl: 'https://www.google.com',
-    sourceUrl: 'https://www.google.com',
+    image: BusArrival,
+    stack: ['Data Engineering', 'StreamLit', 'Alteryx'],
+    liveUrl: 'https://bus-arrival-app-ikmt5bqb7jkfv3d3ktrevl.streamlit.app/',
+    sourceUrl: 'https://github.com/xhhhhhchen/Bus-Arrival-App',
   },
 
 
@@ -55,10 +56,9 @@ export const projects = [
     title: 'ASEAN Poverty Pulse',
     description:
       'Conducted data analysis on ASEAN poverty and health issues, created dashboards that highlights key insights to support poverty reduction improving living conditions',
-    image: Project3,
-    stack: ['Data Analysis'],
-    liveUrl: 'https://www.google.com',
-    sourceUrl: 'https://www.google.com',
+    image: Poverty,
+    stack: ['Data Analysis','Tableau'],
+    presentationURL: 'https://www.google.com',
   },
 
   {
@@ -66,22 +66,22 @@ export const projects = [
     title: 'Airbnb Price Prediction',
     description:
       "Developed a pricing prediction model with Python and machine learning based on Singapore's Airbnb listings, and deploying it using Streamlit. ",
-    image: Project1,
-    stack: ['Data Analysis', 'Machine Learning', 'Streamlit'], 
-    liveUrl: '#Airbnb',
-    sourceUrl: 'https://www.google.com',
+    image: Airbnb,
+    stack: ['Data Analysis', 'Machine Learning', 'Streamlit','Python'], 
+    liveUrl: 'https://airbnb-price-prediction-ee5mrtypzqqo9tfm8e9gec.streamlit.app/',
+    sourceUrl: 'https://github.com/xhhhhhchen/Airbnb-Price-Prediction',
   },
 
-  {
-    id: 6,
-    title: 'Major League Baseball database',
-    description:
-      'Developed a linear regression model to predict the win rate of teams in the Major League Baseball (MLB) using historical data and player statistics.',
-    image: Project3,
-    stack: ['Data Analysis','Machine learning'],
-    liveUrl: 'https://www.google.com',
-    sourceUrl: 'https://www.google.com',
-  },
+  // {
+  //   id: 6,
+  //   title: 'Major League Baseball database',
+  //   description:
+  //     'Developed a linear regression model to predict the win rate of teams in the Major League Baseball (MLB) using historical data and player statistics.',
+  //   image: baseball,
+  //   stack: ['Data Analysis','Machine learning','Python'],
+  //   liveUrl: 'https://www.google.com',
+  //   sourceUrl: 'https://www.google.com',
+  // },
 
 
 ];

@@ -64,7 +64,7 @@ const Hero = () => {
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
     delay: Math.random() * 2,
-    duration: Math.random() * 10 + 10,
+    duration: Math.random() * 10+5,
     }))
     
 

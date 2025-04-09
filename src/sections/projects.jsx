@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../components/title';
 import { projects } from '../utils/constant';
-import { Eye, Github } from 'lucide-react';
+import { Eye, Github ,PresentationIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -19,7 +19,7 @@ const Projects = () => {
             <motion.div
               key={project.id}
               whileHover={{
-                scale: 1.05,  // Scale the project card to 105% when hovered
+                scale: 1.06,  // Scale the project card to 105% when hovered
                 transition: {
                   duration: 0.3,  // Smooth transition
                   ease: "easeInOut",  // Use easeInOut for smooth pop effect
@@ -34,7 +34,7 @@ const Projects = () => {
 
               <div>
                 <img
-                  className="rounded-tr-3xl rounded-tl-2xl"
+                  className="rounded-tr-3xl rounded-tl-2xl w-200 h-60"
                   src={project.image}
                   alt={project.title}
                 />
@@ -51,26 +51,42 @@ const Projects = () => {
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <a
-                      className="px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-teal-600 to-violet-400 text-white rounded-md"
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Eye size={20} />
-                      <p className="font-semibold">Live</p>
-                    </a>
+                      {project.liveUrl && (
+                        <a
+                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r hover:bg-none from-teal-600 to-violet-400  text-white rounded-md"
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Eye size={20} />
+                          <p className="font-semibold">Live</p>
+                        </a>
+                      )}
 
-                    <a
-                      className="px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-500 hover:bg-lime-600 duration-200 ease-in text-white rounded-md"
-                      href={project.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github size={20} />
-                      <p className="font-semibold">Sources</p>
-                    </a>
-                  </div>
+                      {project.sourceUrl && (
+                        <a
+                          className=" border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-600 hover:bg-gray-900 duration-200 ease-in text-white rounded-md"
+                          href={project.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github size={20} />
+                          <p className="font-semibold">Sources</p>
+                        </a>
+                      )}
+
+                      {project.presentationURL && (
+                        <a
+                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r hover:bg-none from-teal-600 to-violet-400  text-white rounded-md"
+                          href={project.presentationURL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <PresentationIcon size={20} /> 
+                          <p className="font-semibold">Presentation</p>
+                        </a>
+                      )}
+                    </div>
                 </div>
               </div>
             </motion.div>
