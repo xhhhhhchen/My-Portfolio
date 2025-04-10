@@ -2,11 +2,15 @@ import React from 'react'
 import Title from '../components/title'
 import {skills} from "../utils/constant"
 
+// import { OrbitingCircles } from "../components/orbiting circles.jsx";
+// import { File, Settings, Search } from "lucide-react";
+
 const Skills = () => {
   return (
     <section id = 'skills' className = 'pt-32'>
         <div className = "container">
             < Title title = 'my' highlight = "Skills" subtitle = " Here are some of the technologies I've worked with recently." />
+
 
             <div className = 'grid grid-cols-2 md:grid-cols-4 gap-4'>
                 {skills.map(skill => (
@@ -18,11 +22,15 @@ const Skills = () => {
 
                     </div>
 
-                    
                 ))}
             </div>
 
+          
+
         </div>
+
+        
+   
     </section>
   )
 }

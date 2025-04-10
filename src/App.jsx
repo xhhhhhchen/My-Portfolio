@@ -26,7 +26,7 @@ const App = () => {
     ]
 
     // Floating graph nodes
-    const graphNodes = Array.from({ length: 15 }).map((_, i) => ({
+    const graphNodes = Array.from({ length: 20 }).map((_, i) => ({
     size: Math.random() * 6 + 4,
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
@@ -64,7 +64,7 @@ const App = () => {
                     key={`node-${i}`}
                     initial={{ opacity: 0.1, y: 0 }}
                     animate={{
-                      opacity: [0.3, 0.9, 0.1],
+                      opacity: [0.3, 0.9, 0.5],
                       y: [0, -50],
                       x: [0, (Math.random() - 0.5) * 50],
                     }}
