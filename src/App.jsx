@@ -112,9 +112,10 @@ const App = () => {
             <Header />
             <Hero />
             <Projects />
+            
+            <Experience />
             <About />
             <Skills />
-            <Experience />
             <Contact />
             <Footer />
           </div>

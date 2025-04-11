@@ -3,8 +3,9 @@ import Title from '../components/title'
 
 const Experience = () => {
   return (
-    <div className = "mt-32">
-    < Title title = 'my' highlight = "Experience" subtitle = "" />
+    <div className = "mt-32 container ">
+    < Title title = 'my' highlight = "Involvements" subtitle = "" />
+
     </div>
 )
 }

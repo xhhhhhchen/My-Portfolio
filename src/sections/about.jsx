@@ -26,7 +26,7 @@ const About = () => {
               <div className = 'text-left mb-6'>
               <h2 className = 'capitalize text-2xl  font-bold mb-2 md:text-3xl lg:text-4xl'>
                   Hello! I'm {' '} <span className = "bg-gradient-to-r from-teal-300 to-red-200  bg-clip-text text-transparent"> Xiaohong</span>
-                  <span className = " bg-white-100 bg-clip-text font-mono"> 筱红  </span> 
+                  <span className = "text-xl bg-white-100 bg-clip-text font-mono"> | 陈筱虹  </span> 
               </h2>
 
               <p className = "text-gray-400 ">

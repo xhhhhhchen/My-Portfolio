@@ -110,6 +110,7 @@ const EducationSection = () => {
                 
                 <div className="mt-4">
                   <p className="text-gray-400 font-medium mb-2">Related coursework:</p>
+
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-1 text-gray-300">
                     <li className="flex items-center">
                       <span className="w-1 h-1 mr-2 bg-gray-500 rounded-full"></span>
@@ -135,6 +136,7 @@ const EducationSection = () => {
                     <span className="w-1 h-1 mr-2 bg-gray-500 rounded-full"></span>
                     Intelligent Enterprise Systems
                   </li>
+                  
                 </ul>
               </div>
 

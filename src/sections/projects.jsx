@@ -170,7 +170,7 @@ const Projects = () => {
         </motion.div>
 
 
-        <div className="w-1/3 md:w-1/4 border-t-2 border-white mx-auto my-6 md:my-9"></div>
+        <div className="w-full md:w-full border-t-6 rounded-4xl border-gray-800 mx-auto my-6 md:my-9"></div>
       </div>
     </section>
   );
