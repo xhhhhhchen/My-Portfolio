@@ -144,144 +144,144 @@ export const skills = [
   },
 ];
 
-export const programming = [
-  {
-    id: 1,
-    name: 'Python',
-    icon: python,
-  },
+// export const programming = [
+//   {
+//     id: 1,
+//     name: 'Python',
+//     icon: python,
+//   },
 
-  {
-    id: 2,
-    name: 'R',
-    icon: R,
-  },
+//   {
+//     id: 2,
+//     name: 'R',
+//     icon: R,
+//   },
 
-  {
-    id: 3,
-    name: 'C#',
-    icon: csharp,
-  },
+//   {
+//     id: 3,
+//     name: 'C#',
+//     icon: csharp,
+//   },
 
-  {
-    id: 4,
-    name: 'SQL',
-    icon: SQL,
-  },
+//   {
+//     id: 4,
+//     name: 'SQL',
+//     icon: SQL,
+//   },
 
-  {
-    id: 5,
-    name: 'HTML',
-    icon: Html,
-  },
+//   {
+//     id: 5,
+//     name: 'HTML',
+//     icon: Html,
+//   },
 
-  {
-    id: 6,
-    name: 'JavaScript',
-    icon: Js,
-  },
+//   {
+//     id: 6,
+//     name: 'JavaScript',
+//     icon: Js,
+//   },
 
-  {
-    id: 7,
-    name: 'React',
-    icon: React,
-  },
-
-
-  {
-    id: 8,
-    name: 'Tailwind',
-    icon: Tailwind,
-  },
+//   {
+//     id: 7,
+//     name: 'React',
+//     icon: React,
+//   },
 
 
-];
+//   {
+//     id: 8,
+//     name: 'Tailwind',
+//     icon: Tailwind,
+//   },
 
 
-export const analytics = [
-  {
-    id: 1,
-    name: 'Pandas',
-    icon: pandas,
-  },
-
-  {
-    id: 2,
-    name: 'matplotlib',
-    icon: matplotlib,
-  },
-
-  {
-    id: 3,
-    name: 'Seaborn',
-    icon: csharp,
-  },
-
-  {
-    id: 4,
-    name: 'Plotly',
-    icon: csharp,
-  },
-
-  {
-    id: 5,
-    name: 'Power BI',
-    icon: SQL,
-  },
-
-  {
-    id: 6,
-    name: 'Tableau',
-    icon: Html,
-  },
-
-  {
-    id: 7,
-    name: 'SAP Analytics Cloud',
-    icon: Js,
-  },
-
-];
-
-export const datascience = [
-  {
-    id: 1,
-    name: 'TensorFlow',
-    icon: pandas,
-  },
-
-  {
-    id: 2,
-    name: 'PyTorch',
-    icon: matplotlib,
-  },
-
-  {
-    id: 3,
-    name: 'Scikit-learn',
-    icon: csharp,
-  },
-
-  {
-    id: 4,
-    name: 'Keras',
-    icon: csharp,
-  },
-
-  {
-    id: 5,
-    name: 'Apache Spark',
-    icon: SQL,
-  },
-
-  {
-    id: 6,
-    name: 'Streamlit',
-    icon: Html,
-  },
+// ];
 
 
-];
+// export const analytics = [
+//   {
+//     id: 1,
+//     name: 'Pandas',
+//     icon: pandas,
+//   },
+
+//   {
+//     id: 2,
+//     name: 'matplotlib',
+//     icon: matplotlib,
+//   },
+
+//   {
+//     id: 3,
+//     name: 'Seaborn',
+//     icon: csharp,
+//   },
+
+//   {
+//     id: 4,
+//     name: 'Plotly',
+//     icon: csharp,
+//   },
+
+//   {
+//     id: 5,
+//     name: 'Power BI',
+//     icon: SQL,
+//   },
+
+//   {
+//     id: 6,
+//     name: 'Tableau',
+//     icon: Html,
+//   },
+
+//   {
+//     id: 7,
+//     name: 'SAP Analytics Cloud',
+//     icon: Js,
+//   },
+
+// ];
+
+// export const datascience = [
+//   {
+//     id: 1,
+//     name: 'TensorFlow',
+//     icon: pandas,
+//   },
+
+//   {
+//     id: 2,
+//     name: 'PyTorch',
+//     icon: matplotlib,
+//   },
+
+//   {
+//     id: 3,
+//     name: 'Scikit-learn',
+//     icon: csharp,
+//   },
+
+//   {
+//     id: 4,
+//     name: 'Keras',
+//     icon: csharp,
+//   },
+
+//   {
+//     id: 5,
+//     name: 'Apache Spark',
+//     icon: SQL,
+//   },
+
+//   {
+//     id: 6,
+//     name: 'Streamlit',
+//     icon: Html,
+//   },
+
+
+// ];
 
 
 export const involvements = [

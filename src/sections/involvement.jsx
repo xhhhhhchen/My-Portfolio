@@ -107,14 +107,14 @@ const Involvements = () => {
                   className="image-carousel"
                   renderButtonGroupOutside={true}
                   customLeftArrow={
-                    <button className="absolute left-2 z-10 bg-gray-100 bg-opacity-50 hover:bg-gray-400 text-white p-2 cursor-pointer rounded-full hover:bg-opacity-100 transition-all duration-300">
+                    <button className="absolute  left-2 z-10 bg-gray-400/30 bg-opacity-30  hover:bg-gray-400 text-white p-2 cursor-pointer rounded-full hover:bg-opacity-100 transition-all duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                       </svg>
                     </button>
                   }
                   customRightArrow={
-                    <button className="absolute right-2 z-10 bg-gray-100 bg-opacity-50 hover:bg-gray-400 text-white p-2 cursor-pointer rounded-full hover:bg-opacity-100 transition-all duration-300">
+                    <button className="absolute right-2 z-10 bg-gray-400/30 bg-opacity-30 hover:bg-gray-400 text-white p-2 cursor-pointer rounded-full hover:bg-opacity-100 transition-all duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
