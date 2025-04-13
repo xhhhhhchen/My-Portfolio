@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './sections/hero';
@@ -7,9 +7,11 @@ import About from './sections/about';
 import Skills from './sections/skills';
 import Contact from './sections/contact';
 import Footer from './components/footer';
-import Experience from './sections/experience';
+import Involvements from './sections/involvement';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './sections/landing';
+
+
 
 const App = () => {
 
@@ -113,8 +115,9 @@ const App = () => {
             <Hero />
             <Projects />
             
-            <Experience />
+           
             <About />
+            <Involvements />
             <Skills />
             <Contact />
             <Footer />

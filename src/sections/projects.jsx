@@ -69,6 +69,7 @@ const Projects = () => {
                 <motion.div
                   initial={{ scale: 0.95 }}
                   whileHover={{ scale: 1 }}
+                  
                   className="h-full flex flex-col"
                 >
                   <motion.img
@@ -83,7 +84,7 @@ const Projects = () => {
                     className="bg-gray-900 rounded-br-2xl rounded-bl-2xl px-4 py-6  flex flex-col"
                     whileHover={{ 
                       backgroundColor: "rgba(17, 24, 39, 0.8)",
-                      transition: { duration: 0.3 }
+                      transition: { duration: 0.3 },
                     }}
                   >
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -113,16 +114,36 @@ const Projects = () => {
                         <motion.a
                           whileHover={{ 
                             scale: 1.05,
-                            background: "linear-gradient(to right, #0d9488, #7c3aed)"
+                            boxShadow: "0 4px 20px rgba(13, 148, 136, 1)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-blue-600 to-violet-400 text-white rounded-md"
+                          className="  px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-sky-300 to-sky-200 text-white rounded-md shadow-lg"
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Eye size={20} />
-                          <p className="font-semibold">Live</p>
+                          <Eye size={20} className='text-black' />
+                          <p className="font-semibold text-black">Live</p>
+                        </motion.a>
+                      )}
+
+                      
+                      {project.presentationURL && (
+                        <motion.a
+                          whileHover={{ 
+                            scale: 1.05,
+                             boxShadow: "0 4px 20px rgba(254, 172, 215, 0.4)"
+                          }}
+                          whileTap={{ scale: 0.95 }}
+                          className=" px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-violet-200 to-violet-300 text-black rounded-md"
+                          href={project.presentationURL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <PresentationIcon size={20} />
+                          <p className="font-semibold">Presentation</p>
+
+                  
                         </motion.a>
                       )}
 
@@ -143,24 +164,7 @@ const Projects = () => {
                         </motion.a>
                       )}
 
-                      {project.presentationURL && (
-                        <motion.a
-                          whileHover={{ 
-                            scale: 1.05,
-                            background: "linear-gradient(to right, #0f766e, #6d28d9)"
-                          }}
-                          whileTap={{ scale: 0.95 }}
-                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-teal-700 to-violet-500 text-white rounded-md"
-                          href={project.presentationURL}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <PresentationIcon size={20} />
-                          <p className="font-semibold">Presentation</p>
 
-                  
-                        </motion.a>
-                      )}
                     </motion.div>
                   </motion.div>
                 </motion.div>

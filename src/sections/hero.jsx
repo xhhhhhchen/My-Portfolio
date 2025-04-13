@@ -238,14 +238,14 @@ const Hero = () => {
                 variants={itemFromBottom}
               >
                 <a 
-                  className='px-4 py-2 sm:px-6 sm:py-3 w-full sm:w-auto text-center capitalize font-semibold bg-gradient-to-r from-teal-600 to-violet-400 text-white rounded-md hover:scale-105 transition-transform duration-200'
+                  className='px-4 py-2 sm:px-6 sm:py-3 w-full sm:w-auto text-center capitalize font-semibold bg-gradient-to-r from-teal-600 to-violet-400 text-white rounded-md hover:scale-105 transition-transform duration-200 shadow-xl  hover:shadow-teal-300/20'
                   href='#projects'
                 >
                   View My Work
                 </a>
 
                 <a 
-                  className='flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 w-full sm:w-auto text-center capitalize font-semibold bg-neutral-500 hover:bg-blue-300 duration-200 ease-in text-white rounded-md hover:scale-105 transition-transform duration-200'
+                  className='flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 w-full sm:w-auto text-center capitalize font-semibold bg-neutral-500 hover:bg-blue-300 duration-200 ease-in text-white rounded-md hover:scale-105  shadow-xl   hover:shadow-teal-300/30 transition-transform duration-200'
                   href='https://drive.google.com/file/d/1oYgXmFmepd_nzleM7p-84FElz4m8trZk/view?usp=sharing'
                   target='_blank'
                   rel='noopener noreferrer'
