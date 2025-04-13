@@ -154,13 +154,13 @@ const Projects = () => {
                             backgroundColor: "rgba(31, 41, 55, 0.8)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-600 hover:bg-gray-900 duration-200 ease-in text-white rounded-md"
+                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-600 hover:bg-gray-900 duration-200 ease-in text-white rounded-full"
                           href={project.sourceUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <Github size={20} />
-                          <p className="font-semibold">Sources</p>
+                      
                         </motion.a>
                       )}
 
