@@ -165,7 +165,7 @@ const Hero = () => {
             <div className="text-center">
               {/* Main Headline - Responsive text sizing */}
               <motion.h1 
-                className='text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-[1.2] mb-2 md:mb-4'
+                className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight md:leading-[1.2] mb-2 md:mb-4'
                 variants={itemFromLeft}
               >
                 Turning data into {' '} 
@@ -182,7 +182,7 @@ const Hero = () => {
               </motion.h2>
 
               <motion.h1 
-                className='text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight md:leading-[1.2] mb-4 md:mb-6'
+                className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight md:leading-[1.2] mb-4 md:mb-6'
                 variants={itemFromRight}
               >
                 <span className="bg-gradient-to-r from-teal-300 to-red-300 bg-clip-text text-transparent">
@@ -226,7 +226,7 @@ const Hero = () => {
 
               {/* Description - Responsive text and padding */}
               <motion.p 
-                className='hidden md:block text-sm sm:text-base md:text-lg px-4 sm:px-0 mb-8 md:mb-12 max-w-2xl mx-auto '
+                className='hidden md:block text-sm sm:text-base md:text-md px-4 sm:px-0 mb-8 md:mb-12 max-w-2xl mx-auto '
                 variants={itemFromRight}
               >
                 Focused on using data to derive practical, user-friendly solutions, especially to tackle sustainability challenges.
@@ -245,7 +245,7 @@ const Hero = () => {
                 </a>
 
                 <a 
-                  className='flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 w-full sm:w-auto text-center capitalize font-semibold bg-neutral-500 hover:bg-blue-300 duration-200 ease-in text-white rounded-md hover:scale-105  shadow-xl   hover:shadow-teal-300/30 transition-transform duration-200'
+                  className='flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 w-full sm:w-auto text-center capitalize font-semibold bg-blue-300 hover:bg-blue-300 duration-200 ease-in text-white rounded-md hover:scale-105  shadow-xl   hover:shadow-teal-300/30 transition-transform duration-200'
                   href='https://drive.google.com/file/d/1oYgXmFmepd_nzleM7p-84FElz4m8trZk/view?usp=sharing'
                   target='_blank'
                   rel='noopener noreferrer'

@@ -12,17 +12,12 @@ const contact = () => {
   return (
     <section id = 'contact'>
         <div className = 'container pt-32'>
-            <Title title = 'contact' highlight ="me" subtitle ='Get in touch' isCenter={false}/>
+            <Title title = 'contact' highlight ="me" subtitle ='Get in touch!' isCenter={true}/>
 
-            <div className='md:grid md:grid-cols-2 md:gap-16 items-center'>
+            <div className=' md:gap-16 items-center'>
                 
             <Form/> 
-      
-
-                <div className='mb-16 mt-8'>
-
-                
-             </div>
+  
 
                 </div>
 

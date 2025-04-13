@@ -4,7 +4,7 @@ import { involvements } from "../utils/constant";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-const responsive = {
+export const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
     items: 3,
@@ -34,7 +34,7 @@ const imageCarouselResponsive = {
   }
 };
 
-const CustomDot = ({ onClick, ...rest }) => {
+export const CustomDot = ({ onClick, ...rest }) => {
   const { active } = rest;
   return (
     <button

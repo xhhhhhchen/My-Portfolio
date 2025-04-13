@@ -97,7 +97,7 @@ const Projects = () => {
                       {project.stack.map(tech => (
                         <motion.span 
                           key={tech} 
-                          className="px-2 py-1 bg-indigo-900 text-white rounded-full text-sm"
+                          className="px-2 py-1 bg-blue-900 text-white rounded-full text-sm"
                           whileHover={{ scale: 1.1 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
@@ -117,7 +117,7 @@ const Projects = () => {
                             boxShadow: "0 4px 20px rgba(13, 148, 136, 1)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className="  px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-sky-300 to-sky-200 text-white rounded-md shadow-lg"
+                          className="  px-4 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-sky-300 to-sky-200 text-white rounded-md shadow-lg"
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -135,7 +135,7 @@ const Projects = () => {
                              boxShadow: "0 4px 20px rgba(254, 172, 215, 0.4)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className=" px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-violet-200 to-violet-300 text-black rounded-md"
+                          className=" px-4 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-violet-200 to-violet-300 text-black rounded-lg"
                           href={project.presentationURL}
                           target="_blank"
                           rel="noopener noreferrer"

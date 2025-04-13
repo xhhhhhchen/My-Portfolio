@@ -40,7 +40,7 @@ const Navbar = ({ isClicked, toggleNavClick }) => {
                 className={`${isClicked ? 'translate-x-0' : '-translate-x-[190.25rem]'} 
                 fixed left-0 top-0 h-screen w-full flex items-center justify-start transition-all duration-500 lg:hidden`}
             >
-                <ul className="h-full w-[60%] bg-gray-900 pl-4 pt-20">
+                <ul className="h-full w-[60%] bg-gray-900/60 pl-4 pt-20">
                     {navigation.map((item) => (
                         <li 
                             key={item.title} 
@@ -64,7 +64,7 @@ const Navbar = ({ isClicked, toggleNavClick }) => {
                     {navigation.map((item) => (
                         <li key={item.title} className = 'inline-block '>
                             <a 
-                                className={`relative font-medium after:absolute after:bottom-[-0.2rem] after:left-0 after:h-[3px] after:w-[20px] after:rounded-xl after:transition-all after:duration-300 after:ease-in hover:after:bg-blue-600 hover:after:w-full
+                                className={`relative font-medium after:absolute after:bottom-[-0.2rem] after:left-0 after:h-[3px] after:w-[20px] after:rounded-xl after:transition-all after:duration-300 after:ease-in hover:after:bg-teal-200 hover:after:w-full
                                     ${activeLink === item.title ? 'text-red-200 relative after:absolute after:bottom-[-0.2rem] after:bg-teal-200 after:left-0 after:h-[3px] after:w-full after:rounded-xl ' : 
                                         'text-white'} 
                                         hover:text-blue-400 transition-colors duration-100 ease-in`}

@@ -8,14 +8,29 @@ import fk from '../assets/fk.png';
 
 // skills images
 import Html from '../assets/html5.svg';
-import Css from '../assets/css.svg';
 import Js from '../assets/javascript.svg';
 import React from '../assets/react.svg';
-import Node from '../assets/nodejs.svg';
-import TypeScript from '../assets/typescript.svg';
 import Tailwind from '../assets/tailwindcss.svg';
-import Postgres from '../assets/postgresql.svg';
-import { Bus } from 'lucide-react';
+import pandas from '../assets/icons8-pandas (1).svg';
+import tableau from '../assets/icons8-tableau-software.svg';
+import plotly from '../assets/plotly.jpeg';
+import spark from '../assets/spark.svg';
+import c from '../assets/icons8-c.svg';
+import python from '../assets/icons8-python.svg';
+import R from '../assets/icons8-r-project.svg';
+import pytorch from '../assets/icons8-pytorch.svg';
+import sql from '../assets/icons8-sql-48.png';
+import streamlit from '../assets/icons8-streamlit.svg';
+import matplotlib from '../assets/Matplotlib.svg';
+import tensor from '../assets/icons8-tensorflow.svg';
+import keras from '../assets/Keras.svg';
+import pbi from '../assets/pbi.svg';
+import sap from '../assets/sap.svg';
+import alteryx from '../assets/alteryx.png';
+import scikit from '../assets/scikit-learn.svg';
+import seaborn from '../assets/seaborn-1.svg';
+import Aspark from '../assets/spark.svg';
+import { KeySquare } from 'lucide-react';
 
 
 export const projects = [
@@ -87,201 +102,157 @@ export const projects = [
       "Created business dashboards and reports using Power BI to analyze Flipkart's sales data, providing insights into sales performance and customer behavior.",
     image: fk,
     stack: ['Data Analysis', 'Power BI', 'Python'], 
-    liveUrl: 'https://airbnb-price-prediction-ee5mrtypzqqo9tfm8e9gec.streamlit.app/',
+    liveUrl: 'https://app.powerbi.com/links/dpuR3Q-F8i?ctid=cba9e115-3016-4462-a1ab-a565cba0cdf1&pbi_source=linkShare',
     presentationURL: 'https://www.google.com',
   },
 
   
 ];
 
-export const skills = [
+
+export const programming = [
   {
     id: 1,
+    name: 'Python',
+    icon: python,
+  },
+
+  {
+    id: 2,
+    name: 'R',
+    icon: R,
+  },
+
+  {
+    id: 3,
+    name: 'C#',
+    icon: c,
+  },
+
+  {
+    id: 4,
+    name: 'SQL',
+    icon: sql,
+  },
+
+  {
+    id: 5,
     name: 'HTML',
     icon: Html,
   },
 
   {
-    id: 2,
-    name: 'CSS',
-    icon: Css,
-  },
-
-  {
-    id: 3,
+    id: 6,
     name: 'JavaScript',
     icon: Js,
   },
 
   {
-    id: 4,
-    name: 'React',
+    id: 7,
+    name: 'React.js',
     icon: React,
+  },
+
+
+  {
+    id: 8,
+    name: 'Tailwind CSS',
+    icon: Tailwind,
+  },
+
+
+];
+
+
+export const analytics = [
+  {
+    id: 1,
+    name: 'Pandas',
+    icon: pandas,
+  },
+
+  {
+    id: 2,
+    name: 'matplotlib',
+    icon: matplotlib,
+  },
+
+  {
+    id: 3,
+    name: 'Seaborn',
+    icon: seaborn,
+  },
+
+  {
+    id: 4,
+    name: 'Plotly',
+    icon: plotly,
   },
 
   {
     id: 5,
-    name: 'Node',
-    icon: Node,
+    name: 'Power BI',
+    icon: pbi,
   },
 
   {
     id: 6,
-    name: 'TypeScript',
-    icon: TypeScript,
+    name: 'Tableau',
+    icon: tableau,
   },
 
   {
     id: 7,
-    name: 'Tailwind',
-    icon: Tailwind,
+    name: 'SAP Analytics Cloud',
+    icon: sap,
+  },
+
+];
+
+export const datascience = [
+  {
+    id: 1,
+    name: 'TensorFlow',
+    icon: tensor,
   },
 
   {
-    id: 8,
-    name: 'Postgres',
-    icon: Postgres,
+    id: 2,
+    name: 'PyTorch',
+    icon: pytorch,
   },
-];
 
-// export const programming = [
-//   {
-//     id: 1,
-//     name: 'Python',
-//     icon: python,
-//   },
+  {
+    id: 3,
+    name: 'Scikit-learn',
+    icon: scikit,
+  },
 
-//   {
-//     id: 2,
-//     name: 'R',
-//     icon: R,
-//   },
+  {
+    id: 4,
+    name: 'Keras',
+    icon: keras,
+  },
 
-//   {
-//     id: 3,
-//     name: 'C#',
-//     icon: csharp,
-//   },
+  {
+    id: 5,
+    name: 'Apache Spark',
+    icon: Aspark,
+  },
 
-//   {
-//     id: 4,
-//     name: 'SQL',
-//     icon: SQL,
-//   },
+  {
+    id: 6,
+    name: 'Streamlit',
+    icon: streamlit,
+  },
 
-//   {
-//     id: 5,
-//     name: 'HTML',
-//     icon: Html,
-//   },
+  {
+    id: 7,
+    name: 'Alteryx',
+    icon: alteryx,
+  },
 
-//   {
-//     id: 6,
-//     name: 'JavaScript',
-//     icon: Js,
-//   },
-
-//   {
-//     id: 7,
-//     name: 'React',
-//     icon: React,
-//   },
-
-
-//   {
-//     id: 8,
-//     name: 'Tailwind',
-//     icon: Tailwind,
-//   },
-
-
-// ];
-
-
-// export const analytics = [
-//   {
-//     id: 1,
-//     name: 'Pandas',
-//     icon: pandas,
-//   },
-
-//   {
-//     id: 2,
-//     name: 'matplotlib',
-//     icon: matplotlib,
-//   },
-
-//   {
-//     id: 3,
-//     name: 'Seaborn',
-//     icon: csharp,
-//   },
-
-//   {
-//     id: 4,
-//     name: 'Plotly',
-//     icon: csharp,
-//   },
-
-//   {
-//     id: 5,
-//     name: 'Power BI',
-//     icon: SQL,
-//   },
-
-//   {
-//     id: 6,
-//     name: 'Tableau',
-//     icon: Html,
-//   },
-
-//   {
-//     id: 7,
-//     name: 'SAP Analytics Cloud',
-//     icon: Js,
-//   },
-
-// ];
-
-// export const datascience = [
-//   {
-//     id: 1,
-//     name: 'TensorFlow',
-//     icon: pandas,
-//   },
-
-//   {
-//     id: 2,
-//     name: 'PyTorch',
-//     icon: matplotlib,
-//   },
-
-//   {
-//     id: 3,
-//     name: 'Scikit-learn',
-//     icon: csharp,
-//   },
-
-//   {
-//     id: 4,
-//     name: 'Keras',
-//     icon: csharp,
-//   },
-
-//   {
-//     id: 5,
-//     name: 'Apache Spark',
-//     icon: SQL,
-//   },
-
-//   {
-//     id: 6,
-//     name: 'Streamlit',
-//     icon: Html,
-//   },
-
-
-// ];
+]; 
 
 
 export const involvements = [
