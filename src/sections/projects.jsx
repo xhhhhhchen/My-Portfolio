@@ -167,6 +167,23 @@ const Projects = () => {
                         </motion.a>
                       )}
 
+                      {project.kaggleURL && (
+                        <motion.a
+                          whileHover={{ 
+                            scale: 1.05,
+                            backgroundColor: "rgba(31, 41, 55, 0.8)"
+                          }}
+                          whileTap={{ scale: 0.95 }}
+                          className="border border-neutral-600 px-4 md:px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-600 hover:bg-gray-900 duration-200 ease-in text-white rounded-full"
+                          href={project.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faKaggle} className="text-white py-0.4" size="lg"  />
+                      
+                        </motion.a>
+                      )}
+
 
                     </motion.div>
                   </motion.div>
@@ -182,12 +199,12 @@ const Projects = () => {
 
           <p className="text-sm text-gray-400">More projects on: </p>
 
-          <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out rounded-full  shadow-xl shadow-blue-200/100'>
+          <a href = "https://github.com/xhhhhhchen" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out rounded-full  shadow-xl shadow-blue-200/100'>
               <Github className = "size-5"/>
           </a>
         
 
-          <a href="https://www.kaggle.com/your-profile" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out  rounded-full shadow-xl shadow-blue-200/90">
+          <a href="https://www.kaggle.com/chenxiaoohongg" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out  rounded-full shadow-xl shadow-blue-200/90">
               <FontAwesomeIcon icon={faKaggle} className="text-white" size="md"  />
           </a>
 

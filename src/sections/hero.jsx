@@ -151,17 +151,17 @@ const Hero = () => {
               
             </motion.div>
 
-            <div className=' flex items-center justify-center gap-4 mt-8'>
-                <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className=' hover:-translate-y-2 transition-all duration=100 ease-in-out'>
+            <div className=' flex items-center justify-center gap-4 mt-8 mb-4'>
+                <a href = "https://www.linkedin.com/in/xhhhhhhh/" target = "_blank" rel="noreferrer" className=' hover:-translate-y-2 transition-all duration=100 ease-in-out'>
                 <Linkedin className = "size-5"/>
                 </a>
             
 
-                <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out'>
+                <a href = "https://github.com/xhhhhhchen/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out'>
                 <Github className = "size-5"/>
                 </a>
 
-                <a href="https://www.kaggle.com/your-profile" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out">
+                <a href="https://www.kaggle.com/chenxiaoohongg" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out">
                 <FontAwesomeIcon icon={faKaggle} className="text-white" size="md"  />
                 </a>
             </div>

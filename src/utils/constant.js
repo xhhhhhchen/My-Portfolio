@@ -98,7 +98,7 @@ export const projects = [
       'Conducted data analysis on ASEAN poverty and health issues, highlighting key insights to support poverty reduction and improving living conditions.',
     image: Poverty,
     stack: ['Data Analysis','Tableau'],
-    presentationURL: 'https://www.google.com',
+    presentationURL: 'https://www.canva.com/design/DAF2RSXkVX8/wt8JDMRNgtFpkRWA4joniw/view?utm_content=DAF2RSXkVX8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hda9978c033',
   },
 
 
@@ -109,7 +109,9 @@ export const projects = [
       'Developed a linear regression model to predict the win rate of teams in the Major League Baseball (MLB) using historical data and player statistics.',
     image: baseball,
     stack: ['Data Analysis','Machine learning','Python'],
-    presentationURL: 'https://www.google.com',
+    presentationURL: 'https://www.canva.com/design/DAGL00FpU6s/F1yupiaaov4ZPBPhCo9F_Q/view?utm_content=DAGL00FpU6s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h33f761828f',
+    kaggleURL: 'https://www.kaggle.com/code/chenxiaoohongg/baseball-analytics-team-win-rate-prediction',
+  
   },
  
    
@@ -121,7 +123,8 @@ export const projects = [
     image: fk,
     stack: ['Data Analysis', 'Power BI', 'Python'], 
     liveUrl: 'https://app.powerbi.com/links/dpuR3Q-F8i?ctid=cba9e115-3016-4462-a1ab-a565cba0cdf1&pbi_source=linkShare',
-    presentationURL: 'https://www.google.com',
+    presentationURL: 'https://github.com/xhhhhhchen/Flipkart-Sales-Analysis/blob/main/Flipkart%20Sales%20Analysis%20Dashboard.pdf',
+    sourceUrl: 'https://github.com/xhhhhhchen/Flipkart-Sales-Analysis.git',
   },
 
   
