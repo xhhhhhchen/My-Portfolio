@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 import { Linkedin, Github} from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKaggle } from '@fortawesome/free-brands-svg-icons';
-
+import PageTransition from '../components/pageTransition';
 
 
 const Hero = () => {
@@ -69,6 +69,7 @@ const Hero = () => {
     
 
   return (
+    <PageTransition>
     <motion.div 
       initial={{opacity: 0}} 
       animate={{opacity: 1}} 
@@ -137,12 +138,18 @@ const Hero = () => {
             animate="show"
           >
             {/* Image - Smaller on mobile */}
-            <motion.div className='mt-10 mb-6 md:mb-8' variants={scaleUp}>
+            <motion.div className='mt-10 mb-6 md:mb-8' 
+            variants={scaleUp}
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            >
               <img 
                 className='size-32 md:size-32 lg:size-40 rounded-full mx-auto bg-gradient-to-r from-teal-300 to-red-300 object-cover' 
                 src={HeroImg} 
                 alt="Profile"
               />
+              
+            </motion.div>
 
             <div className=' flex items-center justify-center gap-4 mt-8'>
                 <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className=' hover:-translate-y-2 transition-all duration=100 ease-in-out'>
@@ -159,7 +166,7 @@ const Hero = () => {
                 </a>
             </div>
 
-            </motion.div>
+            
 
             {/* Text Content */}
             <div className="text-center">
@@ -199,26 +206,32 @@ const Hero = () => {
               />
 
               {/* Tags - Stack on small screens */}
+              <div className="flex flex-col flex-row items-center justify-center gap-2 md:mb-4 flex-shrink-0 max-w-full">
               <motion.div 
-                className="flex flex-row flex-wrap justify-center gap-2 md:mb-4"
                 variants={itemFromLeft}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
                 {/* First Tag - Data Science Major */}
-                <div className="flex-shrink-0 max-w-full">
                   <span className="bg-indigo-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
                     Data Science Major
                   </span>
-                </div>
+           
+                </motion.div>
                 
-                
-                {/* Second Tag - User Experience Minor */}
-                <div className="flex-shrink-0 max-w-full">
+                <motion.div 
+                variants={itemFromLeft}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                {/* Second Tag - User Experience Minor */}              
                   <span className="bg-blue-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
                     User Experience Minor
                   </span>
-                </div> 
+                
+                </motion.div>
+            </div>
 
-              </motion.div>
 
                {/* Divider - Responsive margin */}
               
@@ -263,6 +276,7 @@ const Hero = () => {
         </div>
       </section>
     </motion.div>
+    </PageTransition>
   );
 };
 

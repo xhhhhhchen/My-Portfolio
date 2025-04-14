@@ -104,7 +104,7 @@ const Involvements = () => {
           {involvements.map((involvement, index) => (
             <div 
               key={index} 
-              className="bg-gray-800 h-[525px] text-white rounded-2xl transition-all duration-500 transform hover:scale-103 "
+              className="bg-gray-900 h-[525px] text-white rounded-2xl transition-all duration-500 transform hover:scale-103 "
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
@@ -116,7 +116,7 @@ const Involvements = () => {
                   keyBoardControl={true}
                   customTransition="transform 1000ms ease-in-out"
                   transitionDuration={900}
-                  arrows={false}
+                  arrows={true}
                   className="image-carousel"
                   renderButtonGroupOutside={true}
                   customLeftArrow={

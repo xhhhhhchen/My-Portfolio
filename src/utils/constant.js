@@ -48,6 +48,8 @@ import ncs from '../assets/Involvements/SustAInaHack.jpg';
 import workshop from '../assets/Involvements/workshop.jpg';
 import sylp from '../assets/Involvements/sylp.jpg';
 import mindful from '../assets/Involvements/mindfulcardio.jpg';
+import sgyouthplan from '../assets/Involvements/sgyouthplan.jpg';
+import redcamp from '../assets/Involvements/redcamp.jpg';
 
 export const projects = [
   {
@@ -281,7 +283,8 @@ export const involvements = [
       { image: mission, description: 'Mission X 2023 ' },
       { image: sylp, description: 'Singapore Young Leaders Programme 2024' },
       { image: poly, description: 'Poly Forum 2024' },
-      { image: litterlifters, description: 'LitterLifters 2024-2025' }
+      { image: litterlifters, description: 'LitterLifters 2024-2025' },
+      { image: sgyouthplan, description: 'SG Youth Plan: Participatory Budgeting Exercise' }
     ],
   },
   {
@@ -327,8 +330,8 @@ export const involvements = [
       'Member of the ICT Society in Ngee Ann Polytechnic, volunteering for events and workshops to bring students together for fun and memorable experiences during their studies.',
     images: [
       { image: fop, description: 'Freshman Orientation Programme - Game Master' },
-      { image: BusArrival, description: 'Red Camp - Student Ambassador' },
-      { image: worldskills, description: 'Worldskills - Student Ambassador' }
+      { image: redcamp, description: 'Red Camp - Student Ambassador' },
+      { image: worldskills, description: 'Worldskill Singapore - Student Ambassador' }
     ],
   },
 
