@@ -106,7 +106,7 @@ const EducationSection = () => {
           >
             {expandedSchool === 'ngeeAnn' && (
               <div className="mt-4 p-4 rounded-lg">
-                <p className="text-gray-300 mb-2">CGPA: 3.9 / 4.0</p>
+                <p className="text-gray-300 mb-2">CGPA: XX / 4.0</p>
                 
                 <div className="mt-4">
                   <p className="text-gray-400 font-medium mb-2">Related coursework:</p>

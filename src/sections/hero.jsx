@@ -129,7 +129,7 @@ const Hero = () => {
 
 
       <section id='home' className="min-h-screen">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-6 h-full flex items-center justify-center">
           <motion.div 
             className="w-full max-w-4xl mx-auto py-12 md:py-24"
             variants={container}
@@ -139,23 +139,23 @@ const Hero = () => {
             {/* Image - Smaller on mobile */}
             <motion.div className='mt-10 mb-6 md:mb-8' variants={scaleUp}>
               <img 
-                className='size-32 md:size-30 lg:size-56 rounded-full mx-auto bg-gradient-to-r from-teal-300 to-red-300 object-cover' 
+                className='size-32 md:size-32 lg:size-40 rounded-full mx-auto bg-gradient-to-r from-teal-300 to-red-300 object-cover' 
                 src={HeroImg} 
                 alt="Profile"
               />
 
             <div className=' flex items-center justify-center gap-4 mt-8'>
                 <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className=' hover:-translate-y-2 transition-all duration=100 ease-in-out'>
-                <Linkedin className = "size-6"/>
+                <Linkedin className = "size-5"/>
                 </a>
             
 
                 <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out'>
-                <Github className = "size-6"/>
+                <Github className = "size-5"/>
                 </a>
 
                 <a href="https://www.kaggle.com/your-profile" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out">
-                <FontAwesomeIcon icon={faKaggle} className="text-white" size="lg"  />
+                <FontAwesomeIcon icon={faKaggle} className="text-white" size="md"  />
                 </a>
             </div>
 
@@ -165,7 +165,7 @@ const Hero = () => {
             <div className="text-center">
               {/* Main Headline - Responsive text sizing */}
               <motion.h1 
-                className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight md:leading-[1.2] mb-2 md:mb-4'
+                className='text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight md:leading-[1.2] mb-2 md:mb-3'
                 variants={itemFromLeft}
               >
                 Turning data into {' '} 
@@ -182,7 +182,7 @@ const Hero = () => {
               </motion.h2>
 
               <motion.h1 
-                className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight md:leading-[1.2] mb-4 md:mb-6'
+                className='text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight md:leading-[1.2] mb-3'
                 variants={itemFromRight}
               >
                 <span className="bg-gradient-to-r from-teal-300 to-red-300 bg-clip-text text-transparent">
@@ -194,18 +194,18 @@ const Hero = () => {
 
               {/* Divider - Responsive margin */}
               <motion.div 
-                className="w-1/3 md:w-1/4 border-t-2 border-white mx-auto my-6 md:my-9" 
+                className="w-1/3 md:w-1/4 border-t-2 border-white mx-auto my-6 md:my-7" 
                 variants={itemFromBottom}
               />
 
               {/* Tags - Stack on small screens */}
               <motion.div 
-                className="flex flex-row flex-wrap justify-center gap-2 md:mb-6"
+                className="flex flex-row flex-wrap justify-center gap-2 md:mb-4"
                 variants={itemFromLeft}
               >
                 {/* First Tag - Data Science Major */}
                 <div className="flex-shrink-0 max-w-full">
-                  <span className="bg-indigo-900 px-3 py-1 text-sm md:text-base rounded-lg inline-block truncate">
+                  <span className="bg-indigo-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
                     Data Science Major
                   </span>
                 </div>
@@ -213,7 +213,7 @@ const Hero = () => {
                 
                 {/* Second Tag - User Experience Minor */}
                 <div className="flex-shrink-0 max-w-full">
-                  <span className="bg-blue-900 px-3 py-1 text-sm md:text-base rounded-lg inline-block truncate">
+                  <span className="bg-blue-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
                     User Experience Minor
                   </span>
                 </div> 

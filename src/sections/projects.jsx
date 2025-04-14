@@ -1,9 +1,12 @@
 import React from 'react';
 import Title from '../components/title';
 import { projects } from '../utils/constant';
-import { Eye, Github, PresentationIcon } from 'lucide-react';
+import { Eye, Github,Mail,Linkedin, PresentationIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faKaggle } from '@fortawesome/free-brands-svg-icons';
+
 
 const Projects = () => {
   // Animation variants
@@ -169,10 +172,27 @@ const Projects = () => {
                   </motion.div>
                 </motion.div>
               </div>
+              
             </motion.div>
           ))}
         </motion.div>
 
+
+        <div className = "flex  items-center gap-4 mb-6 justify-left ">
+
+          <p className="text-sm text-gray-400">More projects on: </p>
+
+          <a href = "https://www.linkedin.com/in/alex-carter-7258/" target = "_blank" rel="noreferrer" className='hover:-translate-y-2  transition-all duration=100 ease-in-out rounded-full  shadow-xl shadow-blue-200/100'>
+              <Github className = "size-5"/>
+          </a>
+        
+
+          <a href="https://www.kaggle.com/your-profile" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out  rounded-full shadow-xl shadow-blue-200/90">
+              <FontAwesomeIcon icon={faKaggle} className="text-white" size="md"  />
+          </a>
+
+        
+        </div>
 
         <div className="w-full md:w-full border-t-6 rounded-4xl border-gray-800 mx-auto my-6 md:my-9"></div>
       </div>

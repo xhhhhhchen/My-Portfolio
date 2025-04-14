@@ -35,8 +35,8 @@ const footer = () => {
         </div>
 
 
-            <p className='text-lg text-white-900'>© {new Date().getFullYear()} Xiaohong Chen. All rights reserved.</p>
-            <p className='text-sm text-white-900'>Design & Developed by Xiaohong Chen</p>
+            <p className='text-lg text-gray-700'>© {new Date().getFullYear()} Xiaohong Chen. All rights reserved.</p>
+            <p className='text-sm text-gray-700'>Design & Developed by Xiaohong Chen</p>
         </div>
     </footer>
   )
