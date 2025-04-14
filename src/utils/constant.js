@@ -14,7 +14,6 @@ import Tailwind from '../assets/tailwindcss.svg';
 import pandas from '../assets/icons8-pandas (1).svg';
 import tableau from '../assets/icons8-tableau-software.svg';
 import plotly from '../assets/plotly.jpeg';
-import spark from '../assets/spark.svg';
 import c from '../assets/icons8-c.svg';
 import python from '../assets/icons8-python.svg';
 import R from '../assets/icons8-r-project.svg';
@@ -30,8 +29,25 @@ import alteryx from '../assets/alteryx.png';
 import scikit from '../assets/scikit-learn.svg';
 import seaborn from '../assets/seaborn-1.svg';
 import Aspark from '../assets/spark.svg';
-import { KeySquare } from 'lucide-react';
 
+// involvement images
+import adopt from '../assets/Involvements/adoptablobk.jpg';
+import beach from '../assets/Involvements/beachcleanups.jpg';
+import commserve from '../assets/Involvements/commserveerc.jpg';
+import mission from '../assets/Involvements/missionx.jpg';
+import poly from '../assets/Involvements/polyforum.jpg';
+import litterlifters from '../assets/Involvements/sbwlitter.jpg';
+import ecocleanshores from '../assets/Involvements/ecpCleanshores.jpg';
+import kayak from '../assets/Involvements/jkyn.jpg';
+import ecobottles from '../assets/Involvements/Ecobottles.jpg';
+import fop from '../assets/Involvements/fop.jpg';
+import worldskills from '../assets/Involvements/worldskills.jpg';
+import ercorientation from '../assets/Involvements/orientation.jpg';
+import mapletree from '../assets/Involvements/mapletree.jpg';
+import ncs from '../assets/Involvements/SustAInaHack.jpg';
+import workshop from '../assets/Involvements/workshop.jpg';
+import sylp from '../assets/Involvements/sylp.jpg';
+import mindful from '../assets/Involvements/mindfulcardio.jpg';
 
 export const projects = [
   {
@@ -258,37 +274,62 @@ export const datascience = [
 export const involvements = [
   {
     id: 1,
-    title: 'Environmental Workshops',
+    title: 'Youth Corps Singapore',
     description:
-      'Participated in data science workshops and hackathons, collaborating with peers to solve real-world data challenges.',
-    images: [Airbnb, BusArrival, Airbnb, BusArrival],
-    // image: [Airbnb],
+      'A part of Youth Corps Singapore, engaging in community service and leadership development programs to contribute to social causes.',
+    images: [
+      { image: mission, description: 'Mission X 2023 ' },
+      { image: sylp, description: 'Singapore Young Leaders Programme 2024' },
+      { image: poly, description: 'Poly Forum 2024' },
+      { image: litterlifters, description: 'LitterLifters 2024-2025' }
+    ],
   },
   {
     id: 2,
     title: 'Community Service',
     description:
-      'Competed in various hackathons, developing innovative solutions to complex problems within tight deadlines.',
-    // image: [Airbnb],
-    images: [Airbnb],
-
+      'Organised and participated in community service initiatives, including beach clean-ups and environmental conservation projects, to give back to the community.',
+    images: [
+      { image: mindful, description: 'Project Mindful Cardio @NewLifeCommunity Service' },
+      { image: kayak, description: 'JKYN Kayak100 @Marina Bay' },
+      { image: ecocleanshores, description: 'CleanShores @East Coast Park' },
+      { image: ecobottles, description: 'Eco Bottles @Little Seeds Preschool' }
+    ],
   },
   {
     id: 3,
-    title: 'Beach Clean-Ups',
+    title: 'Environmental Rangers Club',
     description:
-      'Organized and participated in workshops and events to promote data science knowledge and skills among peers.',
-    images: [Airbnb, BusArrival],
-    // image: [Airbnb],
+      'Executive member of the Environmental Rangers Club in Ngee Ann Polytechnic, leading initiatives to promote environmental awareness and sustainability on campus.',
+    images: [
+      { image: ercorientation, description: 'ERC Orientation Day' },
+      { image: workshop, description: 'Student-Led Environmental Workshops' },
+      { image: commserve, description: 'Student-Led Community Service Events' },
+      { image: beach, description: 'Beach Clean-ups' },
+      { image: adopt, description: 'MOE Adopt-A-Block initiative' }
+    ],
   },
   {
     id: 4,
     title: 'Hackathons',
     description:
-      'Mentored junior students in data science concepts, providing guidance and support in their learning journey.',
-    images: [Airbnb, BusArrival],
-    // image: [Airbnb],
+      'Participated in various hackathons, collaborating with teams to develop innovative solutions to real-world problems.',
+    images: [
+      { image: ncs, description: 'NCS SustAIn4Change Ideathon 2024' },
+      { image: mapletree, description: 'Mapletree X NP Hack 2025 - Fourth Place' }
+    ],
   },
-  
-];
 
+  {
+    id: 4,
+    title: 'ICT Society',
+    description:
+      'Member of the ICT Society in Ngee Ann Polytechnic, volunteering for events and workshops to bring students together for fun and memorable experiences during their studies.',
+    images: [
+      { image: fop, description: 'Freshman Orientation Programme - Game Master' },
+      { image: BusArrival, description: 'Red Camp - Student Ambassador' },
+      { image: worldskills, description: 'Worldskills - Student Ambassador' }
+    ],
+  },
+
+];
