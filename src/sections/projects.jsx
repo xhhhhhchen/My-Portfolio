@@ -120,13 +120,13 @@ const Projects = () => {
                             boxShadow: "0 4px 20px rgba(13, 148, 136, 1)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className="  px-4 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-sky-300 to-sky-200 text-white rounded-md shadow-lg"
+                          className="  px-4 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-sky-300 to-sky-200 text-white rounded-full md:rounded-lg shadow-lg"
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <Eye size={20} className='text-black' />
-                          <p className="font-semibold text-black">Live</p>
+                          <p className="font-semibold text-black hidden md:block">Live</p>
                         </motion.a>
                       )}
 
@@ -138,13 +138,13 @@ const Projects = () => {
                              boxShadow: "0 4px 20px rgba(254, 172, 215, 0.4)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className=" px-4 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-violet-200 to-violet-300 text-black rounded-lg"
+                          className=" px-4 py-3 flex items-center gap-2 capitalize font-semibold bg-gradient-to-r from-violet-200 to-violet-300 text-black rounded-full md:rounded-lg"
                           href={project.presentationURL}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <PresentationIcon size={20} />
-                          <p className="font-semibold">Presentation</p>
+                          <p className="font-semibold hidden md:block">Presentation</p>
 
                   
                         </motion.a>
@@ -157,7 +157,7 @@ const Projects = () => {
                             backgroundColor: "rgba(31, 41, 55, 0.8)"
                           }}
                           whileTap={{ scale: 0.95 }}
-                          className="border border-neutral-600 px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-600 hover:bg-gray-900 duration-200 ease-in text-white rounded-full"
+                          className="border border-neutral-600 px-4 md:px-6 py-3 flex items-center gap-2 capitalize font-semibold bg-neutral-600 hover:bg-gray-900 duration-200 ease-in text-white rounded-full"
                           href={project.sourceUrl}
                           target="_blank"
                           rel="noopener noreferrer"
