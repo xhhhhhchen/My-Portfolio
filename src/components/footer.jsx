@@ -29,11 +29,13 @@ const footer = () => {
               <FontAwesomeIcon icon={faKaggle} className="text-white" size="lg"  />
           </a>
 
-          <a href="  xhhhhh7258@gmail.com" target="_blank" rel="noreferrer" className="hover:-translate-y-2 transition-all duration-100 ease-in-out">
-              <Mail className="text-white" size="30"  />
-          </a>         
+         
         </div>
 
+        <div className="flex-row flex inline-flex justify-center gap-2 duration-100 ease-in-out text-gray-500">
+              <Mail size="20"  />
+             Email : xhhhhh7258@gmail.com
+          </div>
 
             <p className='text-lg text-gray-700'>© {new Date().getFullYear()} Xiaohong Chen. All rights reserved.</p>
             <p className='text-sm text-gray-700'>Design & Developed by Xiaohong Chen</p>
