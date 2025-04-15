@@ -114,6 +114,7 @@ const Projects = () => {
                       layout
                     >
                       {project.liveUrl && (
+                        <div className="relative group">
                         <motion.a
                           whileHover={{ 
                             scale: 1.05,
@@ -127,11 +128,18 @@ const Projects = () => {
                         >
                           <Eye size={20} className='text-black' />
                           <p className="font-semibold text-black hidden lg:block">Live</p>
+                        
                         </motion.a>
+
+                        <span className="absolute whitespace-nowrap bottom-full mb-1 left-1/2 transform -translate-x-1/2 px-2 py-1 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                         Live website
+                        </span> 
+                          </div>
                       )}
 
                       
                       {project.presentationURL && (
+                        <div className="relative group">
                         <motion.a
                           whileHover={{ 
                             scale: 1.05,
@@ -148,9 +156,15 @@ const Projects = () => {
 
                   
                         </motion.a>
+                        
+                        <span className="absolute whitespace-nowrap bottom-full mb-1 left-1/2 transform -translate-x-1/2 px-2 py-1 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                         Presentation deck
+                       </span> 
+                        </div>
                       )}
 
                       {project.sourceUrl && (
+                        <div className="relative group">
                         <motion.a
                           whileHover={{ 
                             scale: 1.05,
@@ -165,9 +179,15 @@ const Projects = () => {
                           <Github size={20} />
                       
                         </motion.a>
-                      )}
+                         
+                         <span className="absolute whitespace-nowrap bottom-full mb-1 left-1/2 transform -translate-x-1/2 px-2 py-1 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                          Github repository
+                        </span> 
+                         </div>
+                       )}
 
                       {project.kaggleURL && (
+                        <div className="relative group">
                         <motion.a
                           whileHover={{ 
                             scale: 1.05,
@@ -182,7 +202,11 @@ const Projects = () => {
                           <FontAwesomeIcon icon={faKaggle} className="text-white py-0.4" size="lg"  />
                       
                         </motion.a>
-                      )}
+                      <span className="absolute whitespace-nowrap bottom-full mb-1 left-1/2 transform -translate-x-1/2 px-2 py-1 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50">
+                      Kaggle notebook
+                     </span> 
+                      </div>
+                    )}
 
 
                     </motion.div>
