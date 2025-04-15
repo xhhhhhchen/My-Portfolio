@@ -52,7 +52,7 @@ const Projects = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid space-y-10 md:space-y-10 md:grid-cols-2 md:gap-6 lg:grid-cols-3"
+          className="grid space-y-10 md:space-y-10 md:grid-cols-2 md:gap-6 2xl:grid-cols-3"
         >
           {projects.map((project, index) => (
             <motion.div
@@ -126,7 +126,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                         >
                           <Eye size={20} className='text-black' />
-                          <p className="font-semibold text-black hidden md:block">Live</p>
+                          <p className="font-semibold text-black hidden lg:block">Live</p>
                         </motion.a>
                       )}
 
@@ -144,7 +144,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                         >
                           <PresentationIcon size={20} />
-                          <p className="font-semibold hidden md:block">Presentation</p>
+                          <p className="font-semibold hidden lg:block">Presentation</p>
 
                   
                         </motion.a>
