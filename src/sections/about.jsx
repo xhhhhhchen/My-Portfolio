@@ -4,6 +4,8 @@ import Title from '../components/title'
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import EducationSection from './education';
+import {motion} from 'framer-motion'
+
 
 const About = () => {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -29,9 +31,44 @@ const About = () => {
                   <span className = "text-xl bg-white-100 bg-clip-text font-mono"> | 陈筱虹  </span> 
               </h2>
 
-              <p className = "text-gray-400 ">
-              Penultimate Data Science Student | Environmental Impact Scholar
-              </p>
+          
+  
+              <div className="flex items-center gap-2 mt-5 flex-shrink-0 flex-wrap">
+             
+                <motion.div  
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                         
+                  <span className="bg-indigo-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
+                 NP Environmental Impact Scholar
+                  </span>
+                
+                </motion.div>
+
+                <motion.div  
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                  
+                  <span className="bg-teal-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
+               MBTI : ESTJ
+                  </span>
+                
+                </motion.div>
+
+                <motion.div  
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                  
+                  <span className="bg-neutral-700 px-3 py-1 text-xs rounded-lg inline-block truncate">
+                  Based in Singapore
+                  </span>
+                
+                </motion.div>
+
+              </div>
 
               <div>
               <EducationSection/>
