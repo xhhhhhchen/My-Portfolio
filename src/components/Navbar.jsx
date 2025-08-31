@@ -51,7 +51,7 @@ const Navbar = ({ isClicked, toggleNavClick }) => {
                                 className={`mb-4 text-lg font-medium capitalize`}
                             >
                                 <a 
-                                    className={`${activeLink === item.title ? 'text-emerald-200' : isDark ? 'text-white' : 'text-gray-900'} hover:text-blue-300 dark:hover:text-red-400 transition-colors duration-100 ease-in`}
+                                    className={`${activeLink === item.title ? 'text-orange-500' : isDark ? 'text-white' : 'text-gray-900'} hover:text-blue-300 dark:hover:text-red-400 transition-colors duration-100 ease-in`}
                                     href={item.url}
                                     onClick={() => toggleNavClick()}
                                 >
