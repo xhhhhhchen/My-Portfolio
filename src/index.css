@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* (Optional) smoother theme transitions */
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 200ms;
+}
+
+
 *{
   scroll-behavior: smooth;
 }
@@ -9,7 +20,7 @@
   margin-inline : auto;
   padding-inline: 1rem;
 }
-@theme {
+:root {
   /* font */
   --font-poppins: "Poppins", sans-serif; 
 
@@ -30,18 +41,18 @@
 }
 
 
-@theme inline {
+:root {
   --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
- 
-  @keyframes orbit {
-    0% {
-      transform: rotate(calc(var(--angle) * 1deg))
-        translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
-    }
-    100% {
-      transform: rotate(calc(var(--angle) * 1deg + 360deg))
-        translateY(calc(var(--radius) * 1px))
-        rotate(calc((var(--angle) * -1deg) - 360deg));
-    }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg))
+      translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc((var(--angle) * -1deg) - 360deg));
   }
 }

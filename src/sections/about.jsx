@@ -4,11 +4,12 @@ import Title from '../components/title'
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import EducationSection from './education';
-import {motion} from 'framer-motion'
-
+import { motion } from 'framer-motion'
+import { useTheme } from '../context/ThemeContext';
 
 const About = () => {
   const [expandedSection, setExpandedSection] = useState(null);
+  const { isDark } = useTheme();
 
   const toggleSection = (section) => {
     setExpandedSection(expandedSection === section ? null : section);
@@ -17,68 +18,64 @@ const About = () => {
   return (
     <section id='about' className='pt-32'>
       <div className="container">
-
         <div className='md:grid md:grid-cols-2 md:gap-8 items-center'>
-
           <div className='mb-8 md:mb-0'>
             <img className="object-cover rounded-2xl" src={AboutImg} alt="About Img" />
           </div>
 
           <div>
-              <div className = 'text-left mb-6'>
-              <h2 className = 'capitalize text-2xl  font-bold mb-2 md:text-3xl lg:text-4xl'>
-                  Hello! I'm {' '} <span className = "bg-gradient-to-r from-teal-300 to-red-200  bg-clip-text text-transparent"> Xiaohong</span>
-                  <span className = "text-xl bg-white-100 bg-clip-text font-mono"> | 陈筱虹  </span> 
+            <div className='text-left mb-6'>
+              <h2 className={`capitalize text-2xl font-bold mb-2 md:text-3xl lg:text-4xl ${isDark ? 'text-white' : 'text-gray-800'}`}>
+                Hello! I'm {' '} 
+                 <span className={`bg-gradient-to-r bg-clip-text text-transparent ${
+              isDark 
+                ? 'from-teal-300 to-red-300' 
+                : 'from-teal-400 to-red-400'
+            }`}>
+              Xiaohong
+             </span>
+                <span className={`text-xl font-mono ${isDark ? 'text-gray-300' : 'text-gray-600'}`}> | 陈筱虹 </span> 
               </h2>
 
-          
-  
               <div className="flex items-center gap-2 mt-5 flex-shrink-0 flex-wrap">
-             
                 <motion.div  
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                         
-                  <span className="bg-indigo-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
-                 NP Environmental Impact Scholar
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <span className={`px-3 py-1 text-xs rounded-lg inline-block truncate ${isDark ? 'bg-indigo-800 text-white' : 'bg-indigo-100 text-indigo-800'}`}>
+                    NP Environmental Impact Scholar
                   </span>
-                
                 </motion.div>
 
                 <motion.div  
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                  
-                  <span className="bg-teal-900 px-3 py-1 text-xs rounded-lg inline-block truncate">
-               MBTI : ESTJ
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <span className={`px-3 py-1 text-xs rounded-lg inline-block truncate ${isDark ? 'bg-teal-800 text-white' : 'bg-teal-100 text-teal-800'}`}>
+                    MBTI : ESTJ
                   </span>
-                
                 </motion.div>
 
                 <motion.div  
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                  
-                  <span className="bg-neutral-700 px-3 py-1 text-xs rounded-lg inline-block truncate">
-                  Based in Singapore
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <span className={`px-3 py-1 text-xs rounded-lg inline-block truncate ${isDark ? 'bg-gray-700 text-white' : 'bg-gray-200 text-gray-800'}`}>
+                    Based in Singapore
                   </span>
-                
                 </motion.div>
-
               </div>
 
               <div>
-              <EducationSection/>
+                <EducationSection/>
               </div>
-
-              </div>
+            </div>
 
             <div className="leading-7 flex flex-col gap-6 mt-6 max-w-prose">
-
-         
+              {/* Add your about content here with theme-aware styling
+              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                Your about content goes here. Make sure to use conditional styling like above.
+              </p> */}
             </div>
           </div>
         </div>
@@ -88,8 +85,6 @@ const About = () => {
 };
 
 export default About;
-
-
 
 // // might not be needed anymore
 

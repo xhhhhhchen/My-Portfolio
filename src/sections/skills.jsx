@@ -4,10 +4,12 @@ import { programming, analytics, datascience } from "../utils/constant";
 import { motion } from 'framer-motion';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useTheme } from '../context/ThemeContext';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState(0);
   const carouselRef = React.createRef();
+  const { isDark } = useTheme();
   
   const responsive = {
     superLargeDesktop: {
@@ -43,16 +45,19 @@ const Skills = () => {
     setActiveCategory(nextSlide);
   };
 
- const CustomDot = ({ onClick, ...rest }) => {
-   const { active } = rest;
-   return (
-     <button
-       className={`mx-1 h-3 w-3 rounded-full transition-all duration-300 ${active ? 'bg-sky-200 w-6' : 'bg-gray-500'}`}
-       onClick={() => onClick()}
-     />
-   );
- };
-
+  const CustomDot = ({ onClick, ...rest }) => {
+    const { active } = rest;
+    return (
+      <button
+        className={`mx-1 h-3 w-3 rounded-full transition-all duration-300 ${
+          active 
+            ? (isDark ? 'bg-sky-200 w-6' : 'bg-orange-900/40 w-6') 
+            : (isDark ? 'bg-gray-500' : 'bg-gray-300')
+        }`}
+        onClick={() => onClick()}
+      />
+    );
+  };
 
   const SkillCategory = ({ skills }) => (
     <div className="mb-16 px-4">
@@ -60,7 +65,11 @@ const Skills = () => {
         {skills.map((skill) => (
           <div 
             key={skill.id} 
-            className="flex items-center gap-3 flex-col p-4 rounded-lg transition-all duration-300"
+            className={`flex items-center gap-3 flex-col p-4 rounded-lg transition-all duration-300 ${
+              isDark 
+                ? 'hover:bg-gray-700/30' 
+                : 'hover:bg-yellow-100/30'
+            }`}
           >
             <motion.div
               whileHover={{ scale: 1.1, rotate: 10 }}
@@ -72,7 +81,7 @@ const Skills = () => {
                 alt={skill.name} 
               />
             </motion.div>
-            <span className="font-bold text-center">
+            <span className={`font-bold text-center ${isDark ? 'text-white' : 'text-gray-800'}`}>
               {skill.name}
             </span>
           </div>
@@ -96,10 +105,16 @@ const Skills = () => {
             <button
               key={index}
               onClick={() => handleHeaderClick(index)}
-              className={`text-lg md:text-sm font-bold transition-colors duration-300 px-2 py-1 rounded-md  ${
+              className={`text-lg md:text-sm font-bold transition-colors duration-300 px-4 py-2 rounded-md ${
                 activeCategory === index 
-                  ? 'text-blue-200 underline underline-offset-10 decoration-2 decoration-gray-600 shadow-xl  shadow-teal-300/20 bg-none'
-                  : 'text-gray-600  hover:text-white '
+                  ? (isDark 
+                      ? 'text-blue-200 underline underline-offset-10 decoration-2 decoration-gray-400 shadow-xl shadow-teal-300/20' 
+                      : 'text-teal-400 underline underline-offset-10 decoration-2 decoration-gray-300 shadow-xl shadow-teal-200/20'
+                    )
+                  : (isDark 
+                      ? 'text-gray-400 hover:text-white' 
+                      : 'text-gray-600 hover:text-gray-800'
+                    )
               }`}
             >
               {category.title}
